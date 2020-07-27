@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>测试JSON跨域问题1111</title>
+<script type="text/javascript" src="http://manage.jt.com/js/jquery-easyui-1.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+/*$(){}结构必然是jQuery函数类库导入后才能正确执行*/
+$(function(){			   //正常
+	alert("我要进行cors的跨域了!!!!");   //正常
+	//利用jQuery发起AJAX请求
+	$.get("http://manage.jt.com/web/testCors",function(data){
+		alert(data.id);
+		alert(data.password);
+	})
+})
+</script>
+</head>
+<body>
+	<h1>JSON跨域请求测试1111</h1>
+</body>
+</html>

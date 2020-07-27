@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.jt</groupId>
+    <artifactId>jt</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.jt.huanan</groupId>
+  <artifactId>jt-cart</artifactId>
+  	<!--2.添加依赖 jt-common -->
+	<dependencies>
+		<dependency>
+			<groupId>com.jt</groupId>
+			<artifactId>jt-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
+	<!--3.添加插件 -->
+	<!--build是负责项目打包部署 一般将项目开发完成之后,需要进行服务器部署(Linux) -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
